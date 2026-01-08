@@ -3,11 +3,10 @@ import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import defaultStyles from "../styles/defaultStyles";
 
-
-export default function Profile() {
+export default function Home() {
   return (
     <SafeAreaView style={defaultStyles.pageContainer}>
-      <Text style={defaultStyles.bodyText}>My School</Text>
+      <Text style={defaultStyles.bodyText}>Best Home Page</Text>
     </SafeAreaView>
   );
 }

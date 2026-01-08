@@ -11,6 +11,6 @@ export const colors = {
   textPrimary: '#0D4C92',  // Main text using primary color
   textSecondary: '#555555', // Gray for secondary text
 
-  tabs: '#4A5679',
+  tabs: 'white',
 };
 export default colors;

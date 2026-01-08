@@ -15,7 +15,7 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen
-        name="home"
+        name="index"
         options={{
           headerTitle: "Home",
           tabBarIcon: ({ focused, color }) => (
