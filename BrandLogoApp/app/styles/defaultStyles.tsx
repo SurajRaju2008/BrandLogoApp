@@ -4,13 +4,44 @@ import colors from "./colors";
 const defaultStyles = StyleSheet.create({
   pageContainer: {
     flex: 1,
-    backgroundColor: colors.secondary, // white background
+    backgroundColor: colors.secondary,
     justifyContent: "center",
     alignItems: "center",
   },
+  boldText: {
+    margin:20,
+    fontWeight:'bold',
+    fontSize: 20,
+    color: colors.primaryDark, 
+  },
   bodyText: {
     fontSize: 20,
-    color: colors.textPrimary, // Indian Blue text
+    color: colors.textPrimary, 
+  },
+  textInput: {
+    width: "90%",
+    height: 48,
+    backgroundColor: colors.secondary,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    fontSize: 16,
+    color: colors.textPrimary,
+  },
+  button: {
+    width: "90%",
+    height: 48,
+    backgroundColor: colors.primaryLight,
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 16,
+  },
+  buttonText: {
+    color: colors.secondary,
+    fontSize: 16,
+    fontWeight: "600",
   },
 });
 
