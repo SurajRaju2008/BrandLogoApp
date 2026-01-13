@@ -32,7 +32,7 @@ const defaultStyles = StyleSheet.create({
   button: {
     width: "90%",
     height: 48,
-    backgroundColor: colors.primaryLight,
+    backgroundColor: colors.primaryDark,
     borderRadius: 8,
     justifyContent: "center",
     alignItems: "center",
@@ -42,6 +42,26 @@ const defaultStyles = StyleSheet.create({
     color: colors.secondary,
     fontSize: 16,
     fontWeight: "600",
+  },
+   signButton: {
+    width: "90%",
+    height: 48,
+    backgroundColor: colors.secondary,
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 10,
+    borderWidth: 3,
+    borderColor: colors.primaryDark
+  },
+  signButtonText: {
+    color: colors.primaryDark,
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  img: {
+    height: "30%", 
+    aspectRatio: 1,  
   },
 });
 
