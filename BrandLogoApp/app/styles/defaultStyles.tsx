@@ -63,6 +63,11 @@ const defaultStyles = StyleSheet.create({
     height: "30%", 
     aspectRatio: 1,  
   },
+  toggle: {
+    marginTop: 8,
+    color: "#007AFF",
+    alignSelf: "flex-end",
+  },
 });
 
 export default defaultStyles;
