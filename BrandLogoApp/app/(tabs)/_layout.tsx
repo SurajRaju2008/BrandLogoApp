@@ -1,13 +1,11 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { View } from "react-native";
-import AppHeader from "../components/AppHeader";
 import colors from "../styles/colors";
 
 export default function TabsLayout() {
   return (
      <View style={{ flex: 1 }}>
-      <AppHeader/>
     <Tabs
       screenOptions={{
         headerShown: false,

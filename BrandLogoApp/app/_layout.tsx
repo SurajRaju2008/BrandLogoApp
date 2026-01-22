@@ -7,7 +7,9 @@ export default function RootLayout() {
     <>
       <StatusBar style="light"/>
       <AppHeader/>
-      <Stack />
+      <Stack screenOptions={{
+          headerShown: false,
+        }}/>
     </>
   
 );
