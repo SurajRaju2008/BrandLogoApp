@@ -2,7 +2,7 @@ import { useRouter } from 'expo-router'
 import React, { useState } from 'react'
 import { Image, Pressable, Text, TextInput, TouchableOpacity } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import defaultStyles from '../styles/defaultStyles'
+import defaultStyles from '../app/styles/defaultStyles'
 
 const Auth = () => {
     const [hidden, setHidden] = useState(true);
@@ -24,7 +24,7 @@ const Auth = () => {
         }
 
         if(valid){
-            console.log("Passes" + password);
+            console.log("Passes: " + password);
             router.push({ pathname: "/(tabs)" });
         }
         else{
