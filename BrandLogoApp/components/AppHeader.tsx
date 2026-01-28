@@ -4,7 +4,7 @@ import colors from "../app/styles/colors";
 
 export default function AppHeader() {
   return <View style={styles.container}>
-    <Image style={styles.img} source={require("../../assets/images/logo.png")}/>
+    <Image style={styles.img} source={require("../assets/images/logo.png")}/>
   </View>;
 }
 const styles = StyleSheet.create({
