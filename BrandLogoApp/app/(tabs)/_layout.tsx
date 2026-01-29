@@ -1,9 +1,20 @@
+import Auth from "@/components/Auth";
+import { useAuth } from "@/components/AuthProvider";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { View } from "react-native";
 import colors from "../styles/colors";
 
 export default function TabsLayout() {
+  const { session } = useAuth();
+
+  if (session === null) {
+    return (
+      <View style={{ flex: 1 }}>
+        <Auth/>
+      </View>
+    );
+  }
   return (
      <View style={{ flex: 1 }}>
     <Tabs

@@ -1,4 +1,3 @@
-import AppHeader from "@/components/AppHeader";
 import { useAuth } from "@/components/AuthProvider";
 import { useRouter } from "expo-router";
 import { useEffect } from "react";
@@ -25,7 +24,6 @@ const index = () => {
   }
   return (
      <View style={{ flex: 1 }}>
-      <AppHeader />
       <Auth />
     </View>
   )

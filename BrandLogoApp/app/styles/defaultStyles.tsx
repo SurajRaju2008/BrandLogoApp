@@ -68,6 +68,9 @@ const defaultStyles = StyleSheet.create({
     color: "#007AFF",
     alignSelf: "flex-end",
   },
+  bubble: {
+    flex: 3,
+  }
 });
 
 export default defaultStyles;

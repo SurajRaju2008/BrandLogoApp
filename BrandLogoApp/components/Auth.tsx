@@ -1,7 +1,6 @@
 import { supabase } from '@/utils/supabase'
-import { useRouter } from 'expo-router'
 import React, { useEffect, useState } from 'react'
-import { Alert, AppState, AppStateStatus, Image, Pressable, Text, TextInput, TouchableOpacity } from 'react-native'
+import { Alert, AppState, AppStateStatus, Image, Pressable, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import defaultStyles from '../app/styles/defaultStyles'
 
@@ -10,7 +9,6 @@ const Auth = () => {
 
     const [email, setEmail] = useState("@gmail.com");
     const [password, setPassword] = useState("123456");
-    const router = useRouter();
     const openTabNav = () => {
         let error = "";
         let valid = false;
@@ -27,7 +25,6 @@ const Auth = () => {
 
         if(valid){
             console.log("Passes: " + password);
-            router.push({ pathname: "/(tabs)" });
         }
         else{
             console.log(password +" "+ error);
@@ -111,6 +108,7 @@ const Auth = () => {
         </Pressable>
       <TouchableOpacity style={defaultStyles.button} onPress={signInWithEmail}><Text style={defaultStyles.buttonText}>Login</Text></TouchableOpacity>
       <TouchableOpacity style={defaultStyles.signButton} onPress={signUpWithEmail}><Text style={defaultStyles.signButtonText}>Sign-up</Text></TouchableOpacity>
+      <View style={defaultStyles.bubble}></View>
     </SafeAreaView>
   )
 }
