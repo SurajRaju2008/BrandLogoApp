@@ -12,5 +12,6 @@ export const colors = {
   textSecondary: '#555555', // Gray for secondary text
 
   tabs: 'white',
+  neutral: '#F2F5F9',
 };
 export default colors;

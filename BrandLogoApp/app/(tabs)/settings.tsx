@@ -2,7 +2,7 @@ import { supabase } from "@/utils/supabase";
 import React from "react";
 import { Alert, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import defaultStyles from "../styles/defaultStyles";
+import defaultStyles from "../../styles/defaultStyles";
 
 
 export default function Settings() {

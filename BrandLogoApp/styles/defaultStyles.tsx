@@ -4,11 +4,18 @@ import colors from "./colors";
 const defaultStyles = StyleSheet.create({
   pageContainer: {
     flex: 1,
-    backgroundColor: colors.secondary,
+    backgroundColor: colors.neutral,
     justifyContent: "center",
     alignItems: "center",
   },
   boldText: {
+    paddingLeft:"20%",
+    margin:20,
+    fontWeight:'bold',
+    fontSize: 20,
+    color: colors.primaryDark, 
+  },
+   boldHomeText: {
     margin:20,
     fontWeight:'bold',
     fontSize: 20,
@@ -19,7 +26,7 @@ const defaultStyles = StyleSheet.create({
     color: colors.textPrimary, 
   },
   textInput: {
-    width: "90%",
+    width: 300,
     height: 48,
     backgroundColor: colors.secondary,
     borderWidth: 1,

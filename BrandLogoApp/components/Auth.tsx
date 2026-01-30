@@ -2,7 +2,7 @@ import { supabase } from '@/utils/supabase'
 import React, { useEffect, useState } from 'react'
 import { Alert, AppState, AppStateStatus, Image, Pressable, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import defaultStyles from '../app/styles/defaultStyles'
+import defaultStyles from '../styles/defaultStyles'
 
 const Auth = () => {
     const [hidden, setHidden] = useState(true);

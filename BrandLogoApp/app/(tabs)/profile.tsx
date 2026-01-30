@@ -2,8 +2,8 @@ import { useAuth } from "@/components/AuthProvider";
 import { supabase } from "@/utils/supabase";
 import React, { useEffect, useState } from "react";
 import { ActivityIndicator, Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
-import colors from "../styles/colors";
-import defaultStyles from "../styles/defaultStyles";
+import colors from "../../styles/colors";
+import defaultStyles from "../../styles/defaultStyles";
 
 export default function EditProfileScreen() {
   const { session, isLoading: authLoading } = useAuth();
@@ -134,14 +134,14 @@ export default function EditProfileScreen() {
           value={lastName}
           onChangeText={setLastName}
         />
-        <Text style={defaultStyles.boldText}>School name</Text>
+        <Text style={defaultStyles.boldText}>    School</Text>
         <TextInput
         style={defaultStyles.textInput}
           placeholder="Enter"
           value={schoolName}
           onChangeText={setSchoolName}
         />
-        <Text style={defaultStyles.boldText}>GPA</Text>
+        <Text style={defaultStyles.boldText}>      GPA</Text>
         <TextInput
         style={defaultStyles.textInput}
           placeholder="Enter(0.0 – 5.0)"

@@ -3,7 +3,7 @@ import { useAuth } from "@/components/AuthProvider";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { View } from "react-native";
-import colors from "../styles/colors";
+import colors from "../../styles/colors";
 
 export default function TabsLayout() {
   const { session } = useAuth();
