@@ -8,6 +8,12 @@ const defaultStyles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  pageAuthContainer: {
+    flex: 1,
+    backgroundColor: colors.tabs,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   boldText: {
     paddingLeft:"20%",
     margin:20,
@@ -77,7 +83,28 @@ const defaultStyles = StyleSheet.create({
   },
   bubble: {
     flex: 3,
-  }
+  },
+  row: {
+  flexDirection: "row",
+  justifyContent:"space-around" ,
+  paddingVertical: 10,
+  borderBottomWidth: 1,
+  borderColor: "#eee",
+},
+rank: {
+  width: 30,
+  fontWeight: "bold",
+},
+name: {
+  fontWeight: "600",
+},
+school: {
+  fontSize: 12,
+  color: "#666",
+},
+gpa: {
+  fontWeight: "bold",
+},
 });
 
 export default defaultStyles;

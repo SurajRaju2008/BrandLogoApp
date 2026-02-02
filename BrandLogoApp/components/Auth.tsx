@@ -87,7 +87,7 @@ const Auth = () => {
 
 
   return (
-     <SafeAreaView style={defaultStyles.pageContainer}>
+     <SafeAreaView style={defaultStyles.pageAuthContainer}>
         <Image style={defaultStyles.img} source={require("../assets/images/adaptive-icon.png")}/>
         <TextInput
           style={defaultStyles.textInput}
