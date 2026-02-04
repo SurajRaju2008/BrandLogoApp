@@ -67,6 +67,17 @@ const defaultStyles = StyleSheet.create({
     borderWidth: 3,
     borderColor: colors.primaryDark
   },
+    logoutButton: {
+    width: "90%",
+    height: 48,
+    backgroundColor: colors.secondary,
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 100,
+    borderWidth: 3,
+    borderColor: colors.primaryDark
+  },
   signButtonText: {
     color: colors.primaryDark,
     fontSize: 16,
@@ -105,6 +116,25 @@ school: {
 gpa: {
   fontWeight: "bold",
 },
+ schedule: {
+    backgroundColor: colors.neutral,
+    padding: 5,
+    borderRadius: 5,
+    justifyContent: "flex-end",
+    alignItems: "center",
+    height:'70%'
+  },
+   text: {
+    fontSize: 16,
+    color: colors.primaryDark,
+  },
+  card: {
+    backgroundColor: colors.primaryLight,
+    padding: 15,
+    borderRadius: 10,
+    marginVertical: 5,
+    margin: 10,
+  },
 });
 
 export default defaultStyles;

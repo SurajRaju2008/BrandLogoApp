@@ -100,7 +100,7 @@ const Auth = () => {
           secureTextEntry={true}
           onChangeText={setPassword}
         />
-        //Pressable to hide/show passsword from chat
+
          <Pressable onPress={() => setHidden(!hidden)}>
           <Text style={defaultStyles.toggle}>
             {hidden ? "Show" : "Hide"}

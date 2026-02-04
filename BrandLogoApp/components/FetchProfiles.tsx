@@ -108,7 +108,7 @@ useEffect(() => {
 
   return (
   <View style={defaultStyles.pageContainer}>
-    <Text style={defaultStyles.boldText}>Highest GPA</Text>
+    <Text style={defaultStyles.boldHomeText}>Highest GPA</Text>
 
     <FlatList
       data={profiles}
